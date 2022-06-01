@@ -1,106 +1,78 @@
-# Playlist Project - with HTML/CSS Starter Code
+# Unit 6: Giphy Project
 
-## Overview:
+## Project Description
 
-In this unit, coders will create a Playlist. The Playlist will display a list of information about different songs with images and links to play the songs. To create this project, coders will create arrays to hold song information, use a for of loop to iterate over the arrays, and display data to the screen. They will use .push to add new songs to their playlist. Then, students will refactor their project to using objects instead of arrays to hold their data.
+In this unit, you will create a Giphy App. The Giphy App will take a search term as an input and display a random Gif in a thumbnail on the screen. To create this project, you will learn the anatomy of an API Request, use Promises to make a simple GET request, handle a JSON response object, and use jQuery to display a gif.
 
 ## Day 1
 
-## Day 1 Goal 1: Set Up
+### Day 1 Goal 1: Set Up
 
 #### Planning
 
-- [x] Complete the project planning document.
+- [ ] Complete the project planning document.
 
 #### GitHub Set-Up
 
 - [x] Go to the repository
-- [x] Fork this repository to your github account and import to a new workspace
+- [x] Fork this repository to your Github account and import to a new workspace
 - [x] Submit your website using the link on the Agenda
 
 #### Starter Code
 
 - [x] Read through the HTML starter code to understand the organization and class names given.
-- [x] Read through the JavaScript starter code to determine where each given function is declared and where each given function is called.
+- [x] Go to the API request URL [here](https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1) to see how the API request is set up.
 
-### Day 1 Goal 2: Write the code to store your song titles in JavaScript
+### Day 1 Goal 2: Write a fetch request to the API
 
-- [x] Create and populate an array to store your song names
+- [x] Declare a variable that stores the following API request URL: https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1
+- [x] Write the fetch request that logs the entire API request to the console
 
-### Day 1 Goal 3: Write the code to store the rest of your song information in JavaScript
+### Day 1 Goal 3: Navigate the API request to return a gif
 
-- [x] Create and populate arrays to store your song artists, images, and links.
+- [x] Navigate through the API request URL to return only the first gif in the array
+  - [x] HINT: Work your way through the layers one at a time (check your console every time!) to find where the original image URLs are stored
+- [x] Update your API request so that only the original image URL is logged to the console
 
 #### Wrap
 
-- [x] Push your changes!
+- [x] Commit your changes!
 
 ## Day 2
 
-### Day 2 Goal 1: Write the code to display your song titles on the page
+### Day 2 Goal 1: Display a gif to the screen
 
-- [x] Create a loop that loops through your song name array and displays your song names in the correct div
+- [ ] Update the fetch request so the original gif URL is appended to the screen in the correct div
+- [ ] Use string interpolation to get the gif image to display on the screen
 
-### Day 2 Goal 2: Write the code to display the rest of your song information
+### Day 2 Goal 2: Add a click handler so the API request can use inputted data
 
-- [x] Create loops that loop through your song artists, images, and links arrays and display the information in the correct divs.
+- [ ] Write a click handler for the "Searc" button and move your fetch request into the body
+- [ ] Declare a variable to save the user's input
+- [ ] Use string interpolation to update the request URL in your fetch request so a gif from the user's search term displays when the button is clicked
 
-#### Wrap
+### Wrap
 
-- [x] Push your changes!
+- [ ] Commit your changes!
 
 ## Day 3
 
-### Day 3 Goal 1: Write the code to allow users to add additional songs to your playlist
+### Day 3 Goal 1: Randomize the gif that is displayed
 
-- [x] Declare a variable and save the value of the user input with class `song`
-- [x] Use `.push()` to add the value to your song name array.
+- [ ] Declare a variable that stores a random number from 0 to the total number of items (different gifs) in the response
+- [ ] Update the request URL in your fetch request to display a random gif onto the screen
 
-### Day 3 Goal 2: Write the code to allow users to add additional song information to your playlist
+### Wrap
 
-- [x] Declare additional variables and save the values of each input tag
-- [x] Use `.push()` to add each input value to the correct array
+- [ ] Commit your changes!
 
-#### Wrap
+### Day 3 Goal 2: Add a project extension
 
-- [x] Push your changes!
-
-## Day 4
-
-### Day 4 Goal 1: Refactor your arrays so all your song information is stored in Objects
-
-- [x] Comment out your arrays
-- [x] Create an Object for each of your songs
-- [x] Inside each Object, add key/value pairs to store the title, artist,image, and link
-- [x] Store all your Objects in one array
-
-#### Wrap
-
-- [x] Push your changes!
-
-## Day 5
-
-### Day 5 Goal 1: Refactor your loops so all your song information displays correctly on the page
-
-- [x] Update your click handler so the input values are saved in as values in a new Object
-- [x] Update your `.push()` so the input Object is added to your array of Objects
-- [x] Update your loops based on your new array of Objects
-
-#### Wrap
-
-- [x] Push your changes!
-
-## Project Extensions:
-
-- [ ] Add in your own CSS to personalize your project
-- [ ] Use .length to display how many songs are on your list
-- [ ] Add a delete button to delete songs on your list
-- [ ] Refactor your project further by utilizing functions to simplify your code
-- [ ] Add a shuffle button and functionality
-- [ ] Use local storage to save your songs locally
+- [ ] Display multiple images in the response to the screen.
+- [ ] Create a mail_to link that will email the GIF to anyone you want.
+- [ ] Make the GIF pop out in a modal when clicked on.
 
 ## References/Tools
 
-- [Advanced Reference Table](https://docs.google.com/document/d/1SElvLDvtVOoYZJyR5XbCQJWbSTxyChDiQkz7n3c63Go/preview)
-- [How Jquery Works](http://learn.jquery.com/about-jquery/how-jquery-works/)
-- [JQuery Events](http://api.jquery.com/category/events/)
+- [Fellowship Reference Table](https://docs.google.com/document/d/1qrY2OC-6S04oOXZlYmXja7lmKBmdApR-HXJkhfd67e8/edit)
+- [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)

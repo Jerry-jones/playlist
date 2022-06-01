@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>PlayList Project!</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <!-- Your CSS -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-  </head>
+<html lang="en">
 
-  <body>
-    <h1>My Playlist</h1>
-    <div class="form">
-      <p>Add a new song:</p>
-      <input placeholder="Song Title" class="title" />
-      <input placeholder="Artist Name" class="artist" />
-      <input placeholder="Image URL" class="image" />
-      <input placeholder="Song Link Address" class="link" />
-      <button class="add">Add</button>
-    </div>
-    <div class="display">
-      <div class="column images"></div>
-      <div class="column songs"></div>
-      <div class="column artists"></div>
-      <div class="column lengths"></div>
-      <div class="column links"></div>
-    </div>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Your Javascript -->
-    <script src="js/script.js"></script>
-  </body>
+  <head>
+    <title>Unit 6: Giphy Project</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&amily=Archivo+Black&display=swap" rel="stylesheet">
+
+  </head>  
+
+<body>
+
+  <!-- Page Content -->
+  <header>
+    <h1>Search for a GIF, any GIF!</h1>
+  </header>
+  
+  <input class="search-term" placeholder="Search">
+  <button class="search-button">Search</button>
+
+  <!-- Have your GIF appear below -->
+  <div class="main">
+    <h3 class="display">Your random GIF will display here</h3>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &copy; YourNameHere 20-21</p>
+  </footer>
+
+  <!-- Don't touch this! -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/script.js" async defer> </script>
+  
+</body>
+  
 </html>
